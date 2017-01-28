@@ -1,7 +1,8 @@
 #include <SFML/Graphics.hpp>
 #include <windows.h>
+#include <iostream>
 
-#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+//#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
 int main()
 {
 	//HWND hWnd = GetConsoleWindow();
@@ -18,11 +19,23 @@ int main()
 		{
 			if (event.type == sf::Event::Closed)
 				window.close();
+
+			if (event.type == sf::Event::KeyPressed)
+			{
+				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+				{
+					// left key is pressed: move our character
+					std::cout << "left" << std::endl;
+				}
+			}
+
 		}
 
 		window.clear();
 		window.draw(shape);
 		window.display();
+
+
 	}
 
 	return 0;
