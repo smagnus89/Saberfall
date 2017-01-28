@@ -120,9 +120,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EngineComponent.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EngineComponent.h" />
     <ClInclude Include="include\SFML\Audio.hpp" />
     <ClInclude Include="include\SFML\Audio\AlResource.hpp" />
     <ClInclude Include="include\SFML\Audio\Export.hpp" />

@@ -36,6 +36,9 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EngineComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SFML\Audio\AlResource.hpp">
@@ -319,6 +322,9 @@
     </ClInclude>
     <ClInclude Include="include\SFML\Config.hpp">
       <Filter>Header Files\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineComponent.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
